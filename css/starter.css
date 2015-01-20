@@ -1,0 +1,41 @@
+body {
+    padding-top: 50px;
+
+}
+.starter-template {
+    padding: 40px 15px 10px 15px;
+}
+
+.the-rest {
+    padding: 10px 15px;
+}
+
+.round {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #f67C31;
+    text-align: center;
+    margin: 0% 35%;
+    color: white;
+    font-size: 32pt;
+}
+
+.round-title {
+    padding:20%;
+}
+
+.round-blue {
+    background-color: #1baae2;
+}
+
+.round-navy {
+    background-color: #305C8A;
+}
+.well {
+    border-radius: 5%;
+}
+
+h2 {
+    color: #2b2e32;
+}
