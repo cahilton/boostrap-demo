@@ -49,14 +49,172 @@
 
 <div class="container">
 
-    <div class="starter-template">
+    <div class="starter-template row">
         <h1>From the Grid Up</h1>
-        <p class="lead">This is an introduction to Bootstrap. You need to know how web pages work,
-            but that's about it. It's not anything super advanced, just a "get 'er done" version. You can
-            find way more on the interwebs and the <a href="http://getbootstrap.com/">Bootstrap</a> site.</p>
+        <div class="well">
+            <p><strong>Guard: </strong>Don't fight it son. Confess quickly! If you hold out too long you could jeopardize your credit rating.</p>
+        </div>
+
+        <p class="lead">
+            The grid layout is one of the most powerful things about Bootstrap (it's not just pretty styles, people!). What's so great about it?
+            Well, it looks nice, and makes your site readable. It builds a responsive from the beginning without much concern for
+            different view ports, devices, and browsers (with the exception of IE - not touching that one).
+        </p>
+
+        <p class="lead">
+            With the latest version of Bootstrap (3 as of this writing), Bootstrap went mobile first. That is to say, make sure it works on mobile
+            browsers first. But don't worry lads, it works just fine on all modern browsers and view ports.
+        </p>
+
+        <p class="lead">
+            First things first, everything gets wrapped in a <span class="code">div</span> with either the
+            <span class="code">container</span> (fixed layout) or <span class="code">container-fluid</span>
+            (full width) class. From there, everything gets wrapped in <span class="code">row</span> class. Each row is a unit
+            in the grid, and the children of that grid display all in the same row or line. Child <span class="code">
+            div</span> elements as assigned a column number that must add up to 12. Column classes have 2 qualities, one is the number
+            that must add up to 12. The other is a size, it can one of the following:
+                <table class="table table-bordered table-striped" width="40%" style="background-color: #ffffff">
+                    <tr>
+                        <td>xs</td>
+                        <td>Extra small devices Phones (<768px)</td>
+                    </tr>
+                    <tr>
+                        <td>sm</td>
+                        <td>Small devices Tablets (≥768px)</td>
+                    </tr>
+                    <tr>
+                        <td>md</td>
+                        <td>Medium devices Desktops (≥992px)</td>
+                    </tr>
+                    <tr>
+                        <td>lg</td>
+                        <td>Large devices Desktops (≥1200px)</td>
+                    </tr>
+                </table>
+
+        </p>
+    </div>
+
+    <h3>Grids in action </h3>
+    <div class="the-rest row">
+        <p class="lead">
+            Here's how the 12 column system is displayed. Expand and shrink your browser to see how it behaves:
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+        <div class="col-md-1 demo-grid">.col-md-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 demo-grid">.col-md-8</div>
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 demo-grid">.col-md-6</div>
+        <div class="col-md-6 demo-grid">.col-md-6</div>
+    </div>
+    <div class="the-rest row">
+        <p class="lead">
+        </p>
+    </div>
+
+    <div class="the-rest row">
+        <p class="lead">
+            Here's how the view port widths are displayed. Expand and shrink your browser to see how it behaves:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-xs-8 demo-grid">.col-xs-8</div>
+        <div class="col-xs-4 demo-grid">.col-xs-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 demo-grid">.col-sm-8</div>
+        <div class="col-sm-4 demo-grid">.col-sm-4</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 demo-grid">.col-md-8</div>
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 demo-grid">.col-lg-8</div>
+        <div class="col-lg-4 demo-grid">.col-lg-4</div>
+    </div>
+
+    <div class="the-rest row">
+        <p class="lead">
+            Sometimes things aren't quite the right height for that you can use clear fix. So, if something looks fine
+            on a large view, but doesn't line up on a small view, you can use <span class="code">clearfix</span> to make
+            sure things line up.
+        </p>
+    </div>
+
+    <h3>Clearfix</h3>
+    <div class="row">
+        <p class="lead">Use for view ports when things don't line up.</p>
+    </div>
+
+    <h3>Offsets</h3>
+    <div class="row">
+        <p class="lead">Use offsets when you want extra whitespace or padding, but to line up with
+        the grid. The offset always displays to the left. Notice how each row's numbers still add up to 12.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4 demo-grid">.col-md-4</div>
+        <div class="col-md-4 col-md-offset-4 demo-grid">.col-md-4 .col-md-offset-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3 demo-grid">.col-md-3 .col-md-offset-3</div>
+        <div class="col-md-3 col-md-offset-3 demo-grid">.col-md-3 .col-md-offset-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 demo-grid">.col-md-6 .col-md-offset-3</div>
+    </div>
+
+    <div class="the-rest row">
+        <p class="lead">
+            Learn more in the <a href="http://getbootstrap.com/examples/grid/">Bootstrap Grid examples page</a>.
+        </p>
     </div>
 
 
+    <h3>Nesting</h3>
+    <div class="row">
+        <p class="lead">
+            You can nest the bootstrap grid structure, just make sure to wrap, everything in a row, and remember that
+            all the direct children of a <span class="code">row</span> still add up to 12.
+        </p>
+        <div class="row">
+            <div class="col-md-8 demo-grid">.col-md-8
+                <div class="row">
+                    <div class="col-md-3 demo-grid">inner .col-md-3</div>
+                    <div class="col-md-9 demo-grid">inner .col-md-9</div>
+                </div>
+            </div>
+            <div class="col-md-4 demo-grid">.col-md-4</div>
+        </div>
+    </div>
+
+
+    <div class="the-rest row" align="center">
+
+        <iframe width="560" height="315" src="//www.youtube.com/embed/aErDEFpoD_0" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div><!-- /.container -->
 
 

@@ -1,7 +1,17 @@
 body {
     padding-top: 50px;
-
+    background-color: rgba(30, 192, 255, 0.16);
+    background-image: radial-gradient(#fff 10%, transparent 10%),
+    radial-gradient(#fff 10%, transparent 10%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
+
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .starter-template {
     padding: 40px 15px 10px 15px;
 }
@@ -14,7 +24,7 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    background: #f67C31;
+    background: #93c54b;
     text-align: center;
     margin: 0% 35%;
     color: white;
@@ -32,10 +42,67 @@ body {
 .round-navy {
     background-color: #305C8A;
 }
-.well {
-    border-radius: 5%;
+
+.round:hover {
+    -webkit-box-shadow: 0px 0px 20px 10px #93c54b;
+    -moz-box-shadow: 0px 0px 20px 10px #93c54b;
+    box-shadow: 0px 0px 20px 10px #93c54b;
+}
+
+.round-blue:hover {
+    -webkit-box-shadow: 0px 0px 20px 10px #1baae2;
+    -moz-box-shadow: 0px 0px 20px 10px #1baae2;
+    box-shadow: 0px 0px 20px 10px #1baae2;
+}
+
+.round-navy:hover {
+    -webkit-box-shadow: 0px 0px 20px 10px #305C8A;
+    -moz-box-shadow: 0px 0px 20px 10px #305C8A;
+    box-shadow: 0px 0px 20px 10px #305C8A;
+}
+
+
+a {
+    color: #668839;
 }
 
 h2 {
     color: #2b2e32;
+}
+img, .round, .round-blue, .round-navy {
+    -webkit-transition: all 0.5s;
+}
+img:hover {
+    -webkit-filter: sepia(100%);
+    -webkit-box-shadow: 0px 0px 41px 19px rgba(92,57,22,0.41);
+    -moz-box-shadow: 0px 0px 41px 19px rgba(92,57,22,0.41);
+    box-shadow: 0px 0px 41px 19px rgba(92,57,22,0.41);
+}
+
+.code {
+    background-color: rgb(249, 242, 244);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(199, 37, 78);
+    display: inline;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    height: auto;
+    line-height: 18.0000019073486px;
+    list-style-type: disc;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    text-align: left;
+    width: auto;
+}
+
+.demo-grid {
+    background-color: #ffffff;
+    border: 1px solid #dfd7ca;
+    font-size: 110%;
+    padding: 10px;
 }
