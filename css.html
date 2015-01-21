@@ -10,7 +10,7 @@
     <title>Bootstrap Demo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.sandstone.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/starter.css" rel="stylesheet">
@@ -63,15 +63,225 @@
         </p>
     </div>
 
-    <h3>Tables</h3>
+    <div class="the-rest row">
+        <h3>Tables</h3>
+        <p class="lead">
+            Tables in Bootstrap can take on a variety of styles, and are clean and responsive, just like the rest of Bootstrap! Just add class
+            <span class="code">table</span> and any of the samples below.
+        </p>
+        <div class="demo-grid" style="margin-bottom:30px">
+            <label class="radio-inline">
+                <input type="radio" name="tableToggleRadios" value="" checked="true" class="toggleTableStyle"> Vanilla table
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="tableToggleRadios" value="table-striped" class="toggleTableStyle"> .table-striped
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="tableToggleRadios" value="table-bordered" class="toggleTableStyle"> .table-bordered
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="tableToggleRadios" value="table-condensed" class="toggleTableStyle"> .table-condensed
+            </label>
+        </div>
+        <table id="table-demo" class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Diagnosis</th>
+                <th>ICD-9</th>
+                <th>Date of Onset</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Depression</td>
+                <td>296.2</td>
+                <td>2013-10-31</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Diabetes</td>
+                <td>E11.3</td>
+                <td>2015-01-01</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Diarrhea</td>
+                <td>787.97</td>
+                <td>2015-01-20</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="the-rest row">
+        <h3>Forms</h3>
+        <p class="lead">
+            Bootstrap has built-in support for forms. All your input elements should have class <span class="code">form-control</span>. You can
+            also assign <span class="code">label</span>s to <span class="code">input</span> elements with the <span class="code">for</span>
+            attribute.
+        </p>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="the-rest row">
+        <h3>Buttons</h3>
+        <p class="lead">Buttons (<span class="code">btn</span> class used on <span class="code">button</span>
+            or <span class="code">a</span> tags)
+            come in all shapes and sizes, they can be styled contextually as well (see below!).</p>
+        <p>
+            <button type="button" class="btn btn-default btn-lg">Large button (.btn-lg)</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default">Default button</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default btn-sm">Small button (.btn-sm)</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default btn-xs">Extra small button (.btn-xs)</button>
+        </p>
+    </div>
+    <div class="the-rest row">
+        <h3>Contextual Styles</h3>
 
-    <h3>Forms</h3>
+        <p class="lead">Contextual styles are built-in colors and stylings for text, buttons and other good things.
+        You can use these to indicate certain levels of danger or warning, or just to indicate success!
 
-    <h3>Buttons</h3>
+        </p>
+        <div class="demo-grid" style="margin-bottom:30px">
+            <label class="radio-inline text-default">
+                <input type="radio" name="contextToggleRadios" value="default" checked="true" class="toggleContextualStyle" />
+                .default
+            </label>
+            <label class="radio-inline text-primary">
+                <input type="radio" name="contextToggleRadios" value="primary" class="toggleContextualStyle" />
+                .primary
+            </label>
+            <label class="radio-inline text-success">
+                <input type="radio" name="contextToggleRadios" value="success"  class="toggleContextualStyle" />
+                .success
+            </label>
+            <label class="radio-inline text-info">
+                <input type="radio" name="contextToggleRadios" value="info" class="toggleContextualStyle" />
+                .info
+            </label>
+            <label class="radio-inline text-warning">
+                <input type="radio" name="contextToggleRadios" value="warning" class="toggleContextualStyle" />
+                .warning
+            </label>
+            <label class="radio-inline text-danger">
+                <input type="radio" name="contextToggleRadios" value="danger" class="toggleContextualStyle" />
+                .danger
+            </label>
 
-    <h3>Contextual Styles</h3>
+        </div>
+        <div class="demo-grid" style="margin-bottom:30px">
+            <h4>Paragraph</h4>
+            <p class="toggle-me-context text-default">
+                Quinoa Banksy wayfarers listicle squid. Whatever fap try-hard, DIY Brooklyn fixie occupy plaid drinking vinegar. Sartorial Pinterest XOXO occupy beard Schlitz organic, skateboard YOLO 90's. Occupy bitters pour-over, craft beer deep v disrupt hashtag whatever salvia. Plaid migas Portland Kickstarter hella cardigan. You probably haven't heard of them fingerstache authentic Austin, Neutra slow-carb vegan pop-up Pitchfork kale chips try-hard. Kale chips keytar kogi polaroid cold-pressed, readymade cred DIY messenger bag normcore farm-to-table blog quinoa listicle.
+            </p>
+            <h4>Table</h4>
+            <table class="table table-bordered">
 
-    <h3>Icons, Images, Close and Caret</h3>
+               <tbody>
+                   <tr class="toggle-me-context">
+                       <th scope="row">1</th>
+                       <td>I put some stuff here, yo.</td>
+                   </tr>
+                   <tr class="toggle-me-context">
+                       <th scope="row">2</th>
+                       <td>I put some more stuff here, yo.</td>
+                   </tr>
+               </tbody>
+            </table>
+            <h4>Input Groups</h4>
+
+            <div class="form-group has-default has-feedback toggle-me-context-form-group">
+                <label class="control-label" for="inputGroupdefault1">Label</label>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control" id="inputGroupdefault1" aria-describedby="inputGroupdefault1Status">
+                </div>
+            </div>
+            <h4>Button</h4>
+            <button type="button" class="btn btn-default toggle-me-context-button">Click Me!</button>
+            <h4>Backgrounds</h4>
+            <p class="toggle-me-context-p" style="padding:3px">
+                Kickstarter selvage food truck drinking vinegar twee you probably haven't heard of them, aesthetic fap Neutra whatever High Life next level hashtag umami. Viral cornhole trust fund disrupt biodiesel, YOLO listicle flannel. Carles bitters sustainable butcher cronut food truck. Mlkshk Vice tote bag, asymmetrical raw denim sustainable narwhal 3 wolf moon cliche whatever before they sold out chillwave synth. Hoodie PBR&B Tumblr, Vice XOXO McSweeney's pickled. Beard Austin wolf Blue Bottle seitan mixtape, fanny pack vegan freegan deep v DIY bitters food truck Carles. Try-hard semiotics leggings ugh, +1 crucifix twee health goth American Apparel Etsy asymmetrical.
+            </p>
+            <h4>Panels</h4>
+            <div class="panel panel-default toggle-me-context-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+    </div>
+
+        <div class="the-rest row">
+            <h3>Icons and Caret</h3>
+            <p class="lead">Basically, making stuff available so you don't have to go out on the web and find some
+            copyright-free crap. Cool beans!</p>
+            <h4>Glyphicons</h4>
+
+            <p class="lead">
+                The <a href="http://glyphicons.com/">Glyphicons</a> library is included that's not normally available for free but is
+                in Bootstrap. Thanks dude! Add to buttons and the like. Yahoo! Go ahead and click the button.
+                <div>
+                <button type="button" class="btn btn-default btn-lg get-your-glyph-on">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon-text-word">.glyphicon-star</span>
+                </button></div>
+            </p>
+            <p class="lead">&nbsp;</p>
+            <h4>Caret</h4>
+            <p class="lead">
+                Add carets to yer' buttons when you need 'em! Just add an empty <span class="code">span</span> with
+                a <span class="code">caret</span> class.
+                <div>
+                    <button class="btn btn-warning btn-lg">Rabbits eat <span class="caret"></span></button>
+                 </div>
+            </p>
+        </div>
+
+        <div class="the-rest row">
+            <h3>Wells</h3>
+            <div class="well well-lg">
+                Well, wells are one of my favorite things. Well, why? Well, I guess I like padding.
+                Just add <span class="code">.well</span> to your <span class="code">div</span> and you're off.
+            </div>
+
+
+        </div>
+
 
     <div class="the-rest row" align="center">
 
@@ -87,5 +297,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>
