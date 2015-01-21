@@ -2,6 +2,9 @@
  * Created by cahilton on 1/21/15.
  */
 $(document).ready(function() {
+    // initialize bootstrap data toggle
+    $("body").tooltip({ selector:'[data-toggle=tooltip]' });
+
     $(".toggleTableStyle").click(function() {
         //console.log($(this).val());
         $("#table-demo").removeClass("table-striped")
@@ -262,5 +265,14 @@ $(document).ready(function() {
         $(this)
             .find(".glyphicon-text-word")
             .text("." + newClass);
+    });
+
+    $("#loading-btn").click(function() {
+        var btn = $(this).button("loading");
+        setTimeout(function() {
+            // they can have it back after 5 secs
+            btn.button("reset");
+        }, 5000);
+        return false;
     })
 });

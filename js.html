@@ -66,11 +66,84 @@
 
     <div class="the-rest row">
         <h3>Modals</h3>
-        <p class="lead">Well, if you're writing a front end, there's going to come a time when you need a modal. For Bootstrap
+        <p class="lead">Well, if you're writing a front end, there's going to come a time when you need a modal pop up. For Bootstrap
         modals (the Chevy version), all you is add your modal html to your page, and then trigger it with a button using the
         <span class="code">data-toggle="modal"</span> and <span class="code">data-target="#yourModalId"</span> attributes.</p>
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Make it pop!
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">You made it pop!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA4LzE1LzhjL2NvbW11bml0eXBvLjIzMzgwLmdpZgpwCXRodW1iCTg1MHg1OTA-CmUJanBn/1e40e76e/2cf/community-pop-pop.jpg" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="the-rest row">
+        <h3>Dropdowns</h3>
+        <p class="lead">Dropdowns are standard web fare.</p>
+        <span role="presentation" class="dropdown">
+            <a id="drop4" href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+            </a>
+            <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+            </ul>
+        </span>
+    </div>
+
+    <div class="the-rest row">
+        <h3>Tooltips</h3>
+        <p class="lead">
+            When you need a little more info...add a tooltip. Specified by the <span class="code">data-toggle="tooltip"</span> and
+            <span class="code">data-placement</span> attributes.
+        </p>
+        <div>
+             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="I hold all your secrets">Hover over me</button>
+        </div>
+    </div>
+
+    <div class="the-rest row">
+        <h3>Button states</h3>
+        <p class="lead">For happy clickers, when you don't want them to submit twice, set the <span class="code">data-loading-text</span>
+            attribute, and then set the <span class="code">loading</span> state on your event listener, to slow down those clickamaniacs!
+            <div>
+                <button id="loading-btn" class="btn btn-lg btn-warning" data-loading-text="You will not click again...">Click only once please.</button>
+            </div>
+        </p>
+    </div>
+
+    <div class="the-rest row">
+        <h3>Carousel</h3>
+        <p class="lead">I want a pony! Not really. This is a Bootstrap niceity, but not something I use too often.</p>
+        <iframe src="http://getbootstrap.com/javascript/#carousel" width="700" height="625" ></iframe>
+    </div>
+
+    <div class="the-rest row">
+        <h3>Well, folks</h3>
+        <p class="lead">There's really a lot more than I can cover here, so I recommend you play around with this demo,
+        check out the Bootstrap page, and all the other tips and tricks that are out there. This is only the beginning.
+        Fare thee well!</p>
+    </div>
     <div class="the-rest row" align="center">
 
         <iframe width="560" height="315" src="//www.youtube.com/embed/dht_3NziwSw?list=PLF3CC5CDFF92C41FA" frameborder="0" allowfullscreen></iframe>
@@ -83,5 +156,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>
